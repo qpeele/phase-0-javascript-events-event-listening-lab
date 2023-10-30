@@ -15,3 +15,12 @@ describe("index.js", () => {
     expect(input.addEventListener.called).to.be.true;
   })
 })
+function addingEventListener() {
+  const input = document.getElementById('button');
+
+  function clickAlert() {
+    alert('I was clicked!');
+  }
+
+  input.addEventListener('click', clickAlert);
+}
